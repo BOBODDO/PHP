@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>책을 검색하는 간단한 페이지</title>
+    </head>
+    <body>
+        <h1>검색결과를 출력할게요</h1>
+        <form action="results.php" method="post">
+        <p>
+            <strong>검색 타입을 설정하세요:</strong></br>
+            <select name="searchtype">
+                <option value="Author">Author</option>
+                <option value="Title">Title</option>
+                <option value="ISBN">ISBN</option>
+            </select>
+        </p>
+        <p><strong>검색어를 입력하세요:</strong><br>
+        <input name="searchterm" type="text" size="40"></p>
+        <p><input type="submit" name="submit" value='검색'></p>
+        </form>
+    </body>
+</html>
